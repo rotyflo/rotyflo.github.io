@@ -5,6 +5,7 @@ My [personal portfolio](https://rotyflo.github.io/).
 
 ## Built Using
 - [Terminal CSS](https://terminalcss.xyz)
+- [model-viewer](https://modelviewer.dev/)
 
 ## License
 MIT
