@@ -4,35 +4,37 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>rt flores</title>
 
 	<link rel="stylesheet" href="../css/index.css">
-
-	<!-- favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="terminal">
-	<div class="container">
-		<main>
-			<p id="how-to-title">get local ip address</p>
-			<dl>
-				<dt>linux</dt>
-				<dd>hostname -I | awk '{print $1}'</dd>
-
-				<dt>macos</dt>
-				<dd>ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'</dd>
-
-				<dt>windows</dt>
-				<dd>for /f "tokens=14" %a in ('ipconfig ^| findstr IPv4') do echo %a</dd>
-			</dl>
-		</main>
-	</div>
+<body>
+	<main>
+		<strong>get local ip address</strong>
+		<br><br>
+		<fieldset>
+			<legend>linux</legend>
+			<small>
+				<samp>hostname -I | awk '{print $1}'</samp>
+			</small>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>macos</legend>
+			<small>
+				<samp>ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'</samp>
+			</small>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>windows</legend>
+			<small>
+				<samp>for /f "tokens=14" %a in ('ipconfig ^| findstr IPv4') do echo %a</samp>
+			</small>
+		</fieldset>
+	</main>
 </body>
 
 </html>
