@@ -29,7 +29,7 @@ a:hover {
 
 pre {
     /* background: white; */
-    border: 1px dotted var(--color);
-    padding: 0 20px;
+    border: 1px solid var(--color);
+    padding: 10px 20px;
     overflow-x: auto;
 }
